@@ -26,12 +26,10 @@ struct ButtonView: View {
             )
             .frame(width: 170, height: 50)
             .background(Color.init(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-            .overlay(RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.white, lineWidth: 10))
+            .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 10))
             .cornerRadius(20)
         }
     }
-    
 }
 
 //struct ButtonView_Previews: PreviewProvider {
