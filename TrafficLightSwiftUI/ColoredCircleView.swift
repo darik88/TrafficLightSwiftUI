@@ -1,5 +1,5 @@
 //
-//  ColoredCircle.swift
+//  ColoredCircleView.swift
 //  TrafficLightSwiftUI
 //
 //  Created by Айдар Рахматуллин on 10.12.2020.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColoredCircle: View {
+struct ColoredCircleView: View {
     
     let color: UIColor
     var opacity: Double = 0.3
@@ -24,6 +24,6 @@ struct ColoredCircle: View {
 
 struct ColoredCircle_Previews: PreviewProvider {
     static var previews: some View {
-        ColoredCircle(color: .red)
+        ColoredCircleView(color: .red)
     }
 }

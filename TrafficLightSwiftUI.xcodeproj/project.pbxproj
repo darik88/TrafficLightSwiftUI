@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E33BA91C2582735D00357D48 /* TrafficLightSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BA91B2582735D00357D48 /* TrafficLightSwiftUIApp.swift */; };
-		E33BA91E2582735D00357D48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BA91D2582735D00357D48 /* ContentView.swift */; };
+		E33BA91E2582735D00357D48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BA91D2582735D00357D48 /* MainView.swift */; };
 		E33BA9202582736000357D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33BA91F2582736000357D48 /* Assets.xcassets */; };
 		E33BA9232582736000357D48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33BA9222582736000357D48 /* Preview Assets.xcassets */; };
-		E33BA92C2582739F00357D48 /* ColoredCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BA92B2582739F00357D48 /* ColoredCircle.swift */; };
+		E33BA92C2582739F00357D48 /* ColoredCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BA92B2582739F00357D48 /* ColoredCircleView.swift */; };
 		E33BA9352582D89800357D48 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33BA9342582D89800357D48 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E33BA9182582735D00357D48 /* TrafficLightSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLightSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33BA91B2582735D00357D48 /* TrafficLightSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightSwiftUIApp.swift; sourceTree = "<group>"; };
-		E33BA91D2582735D00357D48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E33BA91D2582735D00357D48 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E33BA91F2582736000357D48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E33BA9222582736000357D48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E33BA9242582736000357D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E33BA92B2582739F00357D48 /* ColoredCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredCircle.swift; sourceTree = "<group>"; };
+		E33BA92B2582739F00357D48 /* ColoredCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredCircleView.swift; sourceTree = "<group>"; };
 		E33BA9342582D89800357D48 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				E33BA91B2582735D00357D48 /* TrafficLightSwiftUIApp.swift */,
-				E33BA91D2582735D00357D48 /* ContentView.swift */,
-				E33BA92B2582739F00357D48 /* ColoredCircle.swift */,
+				E33BA91D2582735D00357D48 /* MainView.swift */,
+				E33BA92B2582739F00357D48 /* ColoredCircleView.swift */,
 				E33BA9342582D89800357D48 /* ButtonView.swift */,
 				E33BA91F2582736000357D48 /* Assets.xcassets */,
 				E33BA9242582736000357D48 /* Info.plist */,
@@ -144,8 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E33BA92C2582739F00357D48 /* ColoredCircle.swift in Sources */,
-				E33BA91E2582735D00357D48 /* ContentView.swift in Sources */,
+				E33BA92C2582739F00357D48 /* ColoredCircleView.swift in Sources */,
+				E33BA91E2582735D00357D48 /* MainView.swift in Sources */,
 				E33BA9352582D89800357D48 /* ButtonView.swift in Sources */,
 				E33BA91C2582735D00357D48 /* TrafficLightSwiftUIApp.swift in Sources */,
 			);

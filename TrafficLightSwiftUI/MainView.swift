@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  TrafficLightSwiftUI
 //
 //  Created by Айдар Рахматуллин on 10.12.2020.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     
     enum TrafficLight {
         case red, yellow, green
@@ -16,9 +16,9 @@ struct ContentView: View {
     @State var currentLight = TrafficLight.red
     @State var text = "START"
     
-    @State var redCircle = ColoredCircle(color: .systemRed)
-    @State var yellowCircle = ColoredCircle(color: .systemYellow)
-    @State var greenCircle = ColoredCircle(color: .systemGreen)
+    @State var redCircle = ColoredCircleView(color: .systemRed)
+    @State var yellowCircle = ColoredCircleView(color: .systemYellow)
+    @State var greenCircle = ColoredCircleView(color: .systemGreen)
     
     var body: some View {
         
@@ -59,6 +59,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
