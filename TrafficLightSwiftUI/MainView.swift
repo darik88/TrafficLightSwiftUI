@@ -16,9 +16,9 @@ struct MainView: View {
     @State var currentLight = TrafficLight.red
     @State var text = "START"
     
-    @State var redCircle = ColoredCircleView(color: .systemRed)
-    @State var yellowCircle = ColoredCircleView(color: .systemYellow)
-    @State var greenCircle = ColoredCircleView(color: .systemGreen)
+    @State private var redLightState = 0.3
+    @State private var yellowLightState = 0.3
+    @State private var greenLightState = 0.3
     
     var body: some View {
         
@@ -26,32 +26,35 @@ struct MainView: View {
             Color(.black).ignoresSafeArea()
             
             VStack(spacing: 30) {
-                redCircle
-                yellowCircle
-                greenCircle
+                ColoredCircleView(color: .systemRed, opacity: redLightState)
+                ColoredCircleView(color: .systemYellow, opacity: yellowLightState)
+                ColoredCircleView(color: .systemGreen, opacity: greenLightState)
                 
                 Spacer()
                 
-                ButtonView(text: text, function: buttonTapped)
+                ButtonView(title: text, action: buttonTapped)
                 
             }.padding(40)
         }
     }
     
     private func buttonTapped(){
+        let lightIsOn = 1.0
+        let lightIsOff = 0.3
+        
         text = "NEXT"
         switch currentLight {
         case .red:
-            greenCircle.opacity = 0.3
-            redCircle.opacity = 1
+            greenLightState = lightIsOff
+            redLightState = lightIsOn
             currentLight = .yellow
         case .yellow:
-            redCircle.opacity = 0.3
-            yellowCircle.opacity = 1
+            redLightState = lightIsOff
+            yellowLightState = lightIsOn
             currentLight = .green
         case .green:
-            yellowCircle.opacity = 0.3
-            greenCircle.opacity = 1
+            yellowLightState = lightIsOff
+            greenLightState = lightIsOn
             currentLight = .red
         }
     }
